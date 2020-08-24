@@ -1,14 +1,16 @@
 package com.example.accountapp.logic;
 
-public class Account{
+public class Account {
     String name;
     int number;
     double balance;
 
     LogicInterface mLogic;
 
-    public Account (LogicInterface logic){
+    // Constructor that initializes mLogic.
+    public Account(LogicInterface logic) {
         mLogic = logic;
     }
+
     
 }
