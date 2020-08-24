@@ -46,22 +46,23 @@ public class Logic
      */
     @Override
     public void process() {
-        Account acct1 = new Account(mOut);
-        Account acct2 = new Account(mOut);
+            Account acct1 = new Account(this);
+            Account acct2 = new Account(this);
 
-        acct1.name = "Bill";
-        acct1.number = 738924;
-        acct1.balance = 231.48;
+            acct1.setName("QOzeem Odeniran");
+            acct1.setNumber(738924);
+            acct1.deposit(231.48);
 
-        acct2.name = "Sue";
-        acct2.number = 894730;
-        acct2.balance = 0;
+            acct2.setName("Azeez Odeniran");
+            acct2.setNumber(894730);
+            acct2.deposit(0);
 
-        acct1.displayBalance();
-        acct1.deposit(89.00);
-        acct1.displayBalance();
+            acct1.displayBalance();
+            acct1.deposit(89.00);
+            acct1.displayBalance();
 
-        acct2.displayBalance();
-        acct2.withdrawal(300);
+            acct2.displayBalance();
+            acct2.withdrawal(300);
+
     }
 }
