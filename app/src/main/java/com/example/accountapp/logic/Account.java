@@ -56,9 +56,10 @@ public class Account {
 
     // Method that displays the balance
     public void displayBalance() {
-//        mLogic.println("The balance on account " + number + " is " + balance);
+        mLogic.println("The balance on account " + number + " is " + balance);
     }
 
+//    THE WITHDRAWAL METHOD
     public boolean withdrawal(double amount) {
         if (balance > amount) {
             balance -= amount;

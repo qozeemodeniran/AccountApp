@@ -49,13 +49,13 @@ public class Logic
             Account acct1 = new Account(this);
             Account acct2 = new Account(this);
 
-            acct1.setName("QOzeem Odeniran");
+            acct1.setName("Qozeem Odeniran");
             acct1.setNumber(738924);
             acct1.deposit(231.48);
 
-            acct2.setName("Azeez Odeniran");
-            acct2.setNumber(894730);
-            acct2.deposit(0);
+            acct1.setName("Azeez Odeniran");
+            acct1.setNumber(894730);
+            acct1.deposit(0);
 
             acct1.displayBalance();
             acct1.deposit(89.00);
@@ -63,6 +63,10 @@ public class Logic
 
             acct2.displayBalance();
             acct2.withdrawal(300);
+    }
+
+    @Override
+    public void println(String s) {
 
     }
 }

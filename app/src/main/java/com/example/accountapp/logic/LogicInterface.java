@@ -15,4 +15,6 @@ public interface LogicInterface {
      * Perform the computation.
      */
     void process();
+
+    void println(String s);
 }
